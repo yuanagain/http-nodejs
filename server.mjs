@@ -1,6 +1,6 @@
 import { createServer } from 'http';
 
 createServer((req, res) => {
-  res.write('Hello World! Blah blah');
+  res.write(`${process.env.ENV_DEMO_TEST}`);
   res.end();
 }).listen(process.env.PORT);
